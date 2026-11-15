@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shyam Traders | Industrial Solvents & Chemical Wholesaler in Lucknow</title>
+  <meta name="description" content="Shyam Traders is a leading wholesale distributor of Ethyl Acetate, N-Butyl Acetate (NBA), NC/PU Industrial Thinners, and bulk solvents in Nadar Ganj, Amausi, Lucknow (226008). COA, MSDS & GST billing available." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono for CAS/Specs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            navy: {
+              850: '#0f2137',
+              900: '#0a1626',
+              950: '#060e18',
+            },
+            amber: {
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-500 selection:text-navy-950">
+
+  <!-- Top Utility Bar -->
+  <div class="bg-navy-950 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-amber-500"></i>
+          Nadar Ganj, Amausi, Lucknow, UP 226008
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-teal-400 font-medium">
+          <i class="fa-solid fa-file-shield"></i>
+          COA, MSDS &amp; 100% GST Billing
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+916388881271" class="hover:text-white transition flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-amber-500"></i>
+          +91 63888 81271
+        </a>
+        <a href="https://wa.me/916388881271?text=Hello%20Shyam%20Traders%2C%20I%20would%20like%20to%20inquire%20about%20bulk%20chemical%20solvents." target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold transition flex items-center gap-1">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Desk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-navy-900 text-amber-500 flex items-center justify-center shadow-md group-hover:bg-navy-850 transition">
+            <i class="fa-solid fa-flask-vial text-lg sm:text-xl"></i>
+          </div>
+          <div>
+            <span class="block text-lg sm:text-xl font-extrabold tracking-tight text-navy-900 leading-none">SHYAM TRADERS</span>
+            <span class="block text-[11px] sm:text-xs font-semibold tracking-wider text-slate-500 uppercase mt-1">Industrial Solvents &amp; Chemicals</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <a href="#catalog" class="hover:text-navy-900 transition">Product Catalog</a>
+          <a href="#advantages" class="hover:text-navy-900 transition">Quality &amp; Logistics</a>
+          <a href="#coverage" class="hover:text-navy-900 transition">Delivery Hubs</a>
+          <a href="#contact" class="hover:text-navy-900 transition">Location</a>
+        </nav>
+
+        <!-- Primary CTA & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#quote-builder" class="bg-amber-500 hover:bg-amber-600 text-navy-950 font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+            <span>Request Bulk Quote</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100 space-y-2">
+        <a href="#catalog" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Product Catalog</a>
+        <a href="#advantages" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Quality &amp; Logistics</a>
+        <a href="#coverage" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Delivery Hubs</a>
+        <a href="#contact" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Warehouse Location</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-navy-900 text-white overflow-hidden">
+    <!-- Subtle Industrial Grid Pattern Overlay -->
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 24px 24px;"></div>
+    <div class="absolute -right-24 -top-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute -left-24 bottom-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-850 border border-slate-700 text-amber-400 text-xs sm:text-sm font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Ready Drum Stock in Nadar Ganj, Amausi, Lucknow
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+            Trusted Wholesale Distributor of <span class="text-amber-400">Industrial Solvents</span> &amp; Thinners
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Supplying high-purity <strong class="text-white">Ethyl Acetate</strong>, <strong class="text-white">N-Butyl Acetate (NBA)</strong>, and <strong class="text-white">Industrial NC/PU Thinners</strong> in sealed 200L drums and 35L carboys. Backed by batch COA, MSDS, and prompt dispatch across Uttar Pradesh.
+          </p>
+
+          <!-- Key Trust Badges -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 pt-2 max-w-xl">
+            <div class="bg-navy-850/90 border border-slate-700/80 rounded-xl p-3 sm:p-4">
+              <div class="text-amber-400 font-mono font-bold text-base sm:text-lg">99.5%+</div>
+              <div class="text-xs text-slate-300 mt-0.5">Verified Purity</div>
+            </div>
+            <div class="bg-navy-850/90 border border-slate-700/80 rounded-xl p-3 sm:p-4">
+              <div class="text-teal-400 font-mono font-bold text-base sm:text-lg">200L / 35L</div>
+              <div class="text-xs text-slate-300 mt-0.5">MS/HDPE Packing</div>
+            </div>
+            <div class="bg-navy-850/90 border border-slate-700/80 rounded-xl p-3 sm:p-4">
+              <div class="text-emerald-400 font-mono font-bold text-base sm:text-lg">COA+MSDS</div>
+              <div class="text-xs text-slate-300 mt-0.5">With GST Bill</div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+            <a href="#quote-builder" class="bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold px-6 py-3.5 rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Get Today's Bulk Rate</span>
+            </a>
+            <a href="tel:+916388881271" class="bg-navy-850 hover:bg-slate-800 text-white border border-slate-600 font-semibold px-6 py-3.5 rounded-xl text-center transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>Call +91 63888 81271</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Quick Spec & Dispatch Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-200">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Live Warehouse Status</span>
+                <h2 class="text-lg font-bold text-navy-900">Amausi Dispatch Hub</h2>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> In Stock
+              </span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm">
+              <li class="flex items-start justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div>
+                  <div class="font-bold text-navy-900">Ethyl Acetate (Industrial Grade)</div>
+                  <div class="text-xs text-slate-500 font-mono mt-0.5">CAS: 141-78-6 | Purity: 99.5% Min</div>
+                </div>
+                <span class="text-xs font-semibold bg-navy-900 text-white px-2.5 py-1 rounded-lg">200L / 35L</span>
+              </li>
+
+              <li class="flex items-start justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div>
+                  <div class="font-bold text-navy-900">N-Butyl Acetate (NBA)</div>
+                  <div class="text-xs text-slate-500 font-mono mt-0.5">CAS: 123-86-4 | Purity: 99.0% Min</div>
+                </div>
+                <span class="text-xs font-semibold bg-navy-900 text-white px-2.5 py-1 rounded-lg">200L / 35L</span>
+              </li>
+
+              <li class="flex items-start justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div>
+                  <div class="font-bold text-navy-900">Industrial NC, PU &amp; Epoxy Thinner</div>
+                  <div class="text-xs text-slate-500 mt-0.5">High-gloss, fast-drying formulations</div>
+                </div>
+                <span class="text-xs font-semibold bg-navy-900 text-white px-2.5 py-1 rounded-lg">200L / 35L</span>
+              </li>
+            </ul>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span><i class="fa-solid fa-truck-fast text-amber-600 mr-1"></i> Same-day Lucknow dispatch</span>
+              <a href="#catalog" class="font-bold text-navy-900 hover:text-amber-600 transition">View Full Specs &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Grid -->
+  <section id="catalog" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-teal-700">Technical Chemical Catalog</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-1">Core Industrial Solvents &amp; Thinners</h2>
+        <p class="text-slate-600 mt-2 max-w-2xl text-sm sm:text-base">
+          Supplied in factory-sealed MS/HDPE drums and carboys with complete batch traceability, Certificate of Analysis (COA), and Material Safety Data Sheet (MSDS).
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-sm">
+          <i class="fa-solid fa-drum text-amber-600 mr-1.5"></i>200 Litre Drums
+        </span>
+        <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-sm">
+          <i class="fa-solid fa-bottle-droplet text-teal-600 mr-1.5"></i>35 Litre Carboys
+        </span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+      <!-- Product 1: Ethyl Acetate -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-navy-900 px-6 py-4 flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-amber-400 bg-navy-850 px-2.5 py-1 rounded-md border border-slate-700">CAS: 141-78-6</span>
+            <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check"></i> Ready Stock
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy-900">Ethyl Acetate (Industrial Grade)</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Clear, colorless, fast-evaporating ester solvent with high solvency power and low moisture content, engineered for continuous industrial production lines.
+            </p>
+
+            <!-- Technical Specs Box -->
+            <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
+              <div>
+                <span class="text-slate-500 block">Purity</span>
+                <span class="font-mono font-bold text-navy-900">99.5% Minimum</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Packaging</span>
+                <span class="font-semibold text-navy-900">200L Drums / 35L Carboys</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Grade</span>
+                <span class="font-semibold text-navy-900">Industrial / Virgin</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Documentation</span>
+                <span class="font-semibold text-teal-700">COA, MSDS, GST Invoice</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Key Industrial Applications</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Flexographic &amp; Rotogravure Inks</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Flexible Packaging</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Industrial Adhesives</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Pharmaceuticals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3">
+          <button onclick="selectProductForQuote('Ethyl Acetate (99.5% Purity)')" class="w-full bg-navy-900 hover:bg-navy-850 text-white font-semibold text-sm py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-invoice text-amber-400"></i>
+            <span>Add to Bulk Quote</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Product 2: N-Butyl Acetate (NBA) -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-navy-900 px-6 py-4 flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-amber-400 bg-navy-850 px-2.5 py-1 rounded-md border border-slate-700">CAS: 123-86-4</span>
+            <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check"></i> Ready Stock
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy-900">N-Butyl Acetate (NBA)</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Medium-evaporating ester solvent offering superior blush resistance, smooth flow, and leveling properties for high-performance surface coatings.
+            </p>
+
+            <!-- Technical Specs Box -->
+            <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
+              <div>
+                <span class="text-slate-500 block">Purity</span>
+                <span class="font-mono font-bold text-navy-900">99.0% Minimum</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Packaging</span>
+                <span class="font-semibold text-navy-900">200L Drums / 35L Carboys</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Evaporation</span>
+                <span class="font-semibold text-navy-900">Medium / Controlled</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Documentation</span>
+                <span class="font-semibold text-teal-700">COA, MSDS, GST Invoice</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Key Industrial Applications</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Industrial Coatings</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Automotive Paints</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Wood &amp; Metal Lacquers</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Synthetic Resins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3">
+          <button onclick="selectProductForQuote('N-Butyl Acetate / NBA (99% Purity)')" class="w-full bg-navy-900 hover:bg-navy-850 text-white font-semibold text-sm py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-invoice text-amber-400"></i>
+            <span>Add to Bulk Quote</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Product 3: Industrial Thinner -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-navy-900 px-6 py-4 flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-amber-400 bg-navy-850 px-2.5 py-1 rounded-md border border-slate-700">NC / PU / EPOXY</span>
+            <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check"></i> Ready Stock
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy-900">Industrial Thinners (NC, PU, Epoxy &amp; Enamel)</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Precision-blended industrial paint thinners formulated for optimal viscosity reduction, high-gloss finish, and zero blushing in humid conditions.
+            </p>
+
+            <!-- Technical Specs Box -->
+            <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
+              <div>
+                <span class="text-slate-500 block">Variants</span>
+                <span class="font-semibold text-navy-900">NC, PU, Epoxy, Stoving</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Packaging</span>
+                <span class="font-semibold text-navy-900">200L Drums / 35L Carboys</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Finish Quality</span>
+                <span class="font-semibold text-navy-900">High Gloss &amp; Anti-Blush</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Documentation</span>
+                <span class="font-semibold text-teal-700">MSDS &amp; GST Invoice</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Key Industrial Applications</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Wood &amp; Furniture Coating</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Metal Fabrication</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Industrial Spray Painting</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Equipment Degreasing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3">
+          <button onclick="selectProductForQuote('Industrial Thinner (NC / PU / Epoxy)')" class="w-full bg-navy-900 hover:bg-navy-850 text-white font-semibold text-sm py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-invoice text-amber-400"></i>
+            <span>Add to Bulk Quote</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Product 4: Custom Industrial Solvents -->
+      <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden">
+        <div>
+          <div class="bg-navy-900 px-6 py-4 flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-teal-300 bg-navy-850 px-2.5 py-1 rounded-md border border-slate-700">BULK CONTRACT</span>
+            <span class="text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-truck-ramp-box"></i> Scheduled Supply
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy-900">Custom Industrial Solvents &amp; Bulk Sourcing</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Dedicated drum-lot procurement and scheduled monthly dispatch for factories requiring Toluene, Acetone, IPA, Mix Xylene, Methanol, or custom blends.
+            </p>
+
+            <!-- Technical Specs Box -->
+            <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
+              <div>
+                <span class="text-slate-500 block">Supply Model</span>
+                <span class="font-semibold text-navy-900">Spot &amp; Monthly Contracts</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Packaging</span>
+                <span class="font-semibold text-navy-900">200L Drums / Bulk Lots</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Solvents Range</span>
+                <span class="font-semibold text-navy-900">IPA, Acetone, Toluene, etc.</span>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Documentation</span>
+                <span class="font-semibold text-teal-700">COA, MSDS, GST Invoice</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Ideal For Manufacturing Units</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Printing &amp; Packaging Plants</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Paint &amp; Resin Manufacturers</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Footwear &amp; Adhesive Units</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3">
+          <button onclick="selectProductForQuote('Custom Industrial Solvents (Bulk Lot)')" class="w-full bg-navy-900 hover:bg-navy-850 text-white font-semibold text-sm py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-invoice text-amber-400"></i>
+            <span>Add to Bulk Quote</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why Choose Shyam Traders -->
+  <section id="advantages" class="bg-white border-y border-slate-200 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-teal-700">Industrial Reliability</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-1">Why Manufacturers Choose Shyam Traders</h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          Consistent chemical purity, transparent documentation, and strategic warehousing in Amausi to keep your production line running without downtime.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900">COA &amp; MSDS Certified</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Every batch is accompanied by a Certificate of Analysis (COA) and Material Safety Data Sheet (MSDS) verifying purity and handling specs.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-teal-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900">100% GST Compliant</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Complete E-Way bill generation and proper HSN-coded GST tax invoicing for seamless Input Tax Credit (ITC) claims.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-warehouse"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900">Ready Stock in Amausi</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Strategically stocked godown in Nadar Ganj, Amausi Industrial Area, eliminating long transit delays from distant ports.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900">Fast Regional Dispatch</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Same-day delivery across Lucknow industrial belts and next-day transport dispatch to Kanpur, Barabanki, and Unnao.
+          </p>
+        </div>
+      </div>
+
+      <!-- Delivery Coverage Banner -->
+      <div id="coverage" class="mt-12 rounded-2xl bg-navy-900 text-white p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Active Supply Network</span>
+          <h3 class="text-xl font-bold mt-1">Industrial Clusters We Serve</h3>
+          <p class="text-sm text-slate-300 mt-1">Direct drum delivery and transport booking from Nadar Ganj, Amausi:</p>
+        </div>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-white">Amausi &amp; Nadarganj</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-white">Chinhat Industrial Area</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-white">Talkatora</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-white">Kursi Road</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-amber-300">Barabanki</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-amber-300">Unnao</span>
+          <span class="px-3.5 py-2 rounded-xl bg-navy-850 border border-slate-700 text-xs sm:text-sm font-semibold text-amber-300">Kanpur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Bulk Quote / Inquiry Builder -->
+  <section id="quote-builder" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      <!-- Left Info Column -->
+      <div class="lg:col-span-5 space-y-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-teal-700">Direct B2B Quotation Desk</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-1">Build Your Bulk Chemical Inquiry</h2>
+          <p class="text-slate-600 mt-3 text-sm sm:text-base leading-relaxed">
+            Select your required solvents, drum or carboy packaging, and delivery hub. Send your requirement directly to our WhatsApp desk for instant daily pricing or submit a formal quote request.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <h3 class="font-bold text-navy-900 flex items-center gap-2">
+            <i class="fa-solid fa-headset text-amber-600"></i>
+            Direct Sales &amp; Dispatch Desk
+          </h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-navy-900 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Call for Spot Rates</div>
+                <a href="tel:+916388881271" class="font-bold text-navy-900 hover:text-amber-600">+91 63888 81271</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-navy-900 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Warehouse Address</div>
+                <div class="font-semibold text-navy-900">Nadar Ganj, Amausi, Lucknow, UP 226008</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-slate-100 text-navy-900 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500">Dispatch Hours</div>
+                <div class="font-semibold text-navy-900">Monday – Saturday: 9:30 AM – 7:30 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Interactive Form -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-lg">
+          <form id="quote-form" class="space-y-6">
+            <!-- Step 1: Select Chemicals -->
+            <div>
+              <label class="block text-sm font-bold text-navy-900 mb-2.5">
+                1. Select Required Chemical(s) <span class="text-red-500">*</span>
+              </label>
+              <div class="grid sm:grid-cols-2 gap-2.5">
+                <label class="cursor-pointer flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-navy-900 bg-slate-50/70 transition has-[:checked]:bg-navy-900 has-[:checked]:text-white has-[:checked]:border-navy-900">
+                  <input type="checkbox" name="chemicals" value="Ethyl Acetate (99.5% Purity)" class="w-4 h-4 accent-amber-500 rounded" checked />
+                  <span class="text-sm font-semibold">Ethyl Acetate (99.5%)</span>
+                </label>
+
+                <label class="cursor-pointer flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-navy-900 bg-slate-50/70 transition has-[:checked]:bg-navy-900 has-[:checked]:text-white has-[:checked]:border-navy-900">
+                  <input type="checkbox" name="chemicals" value="N-Butyl Acetate / NBA (99% Purity)" class="w-4 h-4 accent-amber-500 rounded" />
+                  <span class="text-sm font-semibold">N-Butyl Acetate (NBA)</span>
+                </label>
+
+                <label class="cursor-pointer flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-navy-900 bg-slate-50/70 transition has-[:checked]:bg-navy-900 has-[:checked]:text-white has-[:checked]:border-navy-900">
+                  <input type="checkbox" name="chemicals" value="Industrial Thinner (NC / PU / Epoxy)" class="w-4 h-4 accent-amber-500 rounded" />
+                  <span class="text-sm font-semibold">Industrial Thinner (NC/PU)</span>
+                </label>
+
+                <label class="cursor-pointer flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:border-navy-900 bg-slate-50/70 transition has-[:checked]:bg-navy-900 has-[:checked]:text-white has-[:checked]:border-navy-900">
+                  <input type="checkbox" name="chemicals" value="Custom Industrial Solvents (Bulk Lot)" class="w-4 h-4 accent-amber-500 rounded" />
+                  <span class="text-sm font-semibold">Custom Bulk Solvents</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Packaging & Quantity -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="packaging" class="block text-sm font-bold text-navy-900 mb-1.5">2. Packaging Size</label>
+                <select id="packaging" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 focus:border-navy-900 focus:outline-none">
+                  <option value="200 Litre Drum (MS / HDPE)">200 Litre Drum (MS / HDPE)</option>
+                  <option value="35 Litre Carboy (HDPE)">35 Litre Carboy (HDPE)</option>
+                  <option value="Mixed Drums & Carboys">Mixed Drums &amp; Carboys</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="quantity" class="block text-sm font-bold text-navy-900 mb-1.5">3. Estimated Quantity</label>
+                <input type="text" id="quantity" placeholder="e.g., 5 Drums or 1000 Litres" value="2 Drums" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 focus:border-navy-900 focus:outline-none" required />
+              </div>
+            </div>
+
+            <!-- Step 3: Delivery Hub & Company Details -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="location" class="block text-sm font-bold text-navy-900 mb-1.5">4. Delivery Location</label>
+                <select id="location" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 focus:border-navy-900 focus:outline-none">
+                  <option value="Amausi / Nadarganj, Lucknow">Amausi / Nadarganj, Lucknow</option>
+                  <option value="Chinhat Industrial Area, Lucknow">Chinhat Industrial Area, Lucknow</option>
+                  <option value="Talkatora Industrial Area, Lucknow">Talkatora Industrial Area, Lucknow</option>
+                  <option value="Kursi Road, Lucknow">Kursi Road, Lucknow</option>
+                  <option value="Barabanki">Barabanki</option>
+                  <option value="Unnao">Unnao</option>
+                  <option value="Kanpur">Kanpur</option>
+                  <option value="Self Pickup from Amausi Warehouse">Self Pickup from Amausi Warehouse</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-bold text-navy-900 mb-1.5">5. Company / Buyer Name</label>
+                <input type="text" id="company" placeholder="Your Factory or Business Name" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 focus:border-navy-900 focus:outline-none" />
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+              <button type="button" onclick="sendWhatsAppQuote()" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-5 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Send Quote on WhatsApp</span>
+              </button>
+              <button type="submit" class="sm:w-auto bg-navy-900 hover:bg-navy-850 text-white font-bold py-3.5 px-6 rounded-xl transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                <span>Log Inquiry</span>
+              </button>
+            </div>
+
+            <!-- Inline Confirmation / Copyable Summary Box -->
+            <div id="inquiry-feedback" class="hidden rounded-xl bg-teal-50 border border-teal-200 p-4 text-sm text-teal-900">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <div class="font-bold flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-check text-teal-600"></i>
+                    Quote Request Prepared!
+                  </div>
+                  <p id="feedback-text" class="text-xs text-teal-800 mt-1 whitespace-pre-line font-mono bg-white/80 p-2.5 rounded-lg border border-teal-100"></p>
+                </div>
+                <button type="button" onclick="copyQuoteSummary()" class="shrink-0 px-3 py-1.5 rounded-lg bg-teal-700 text-white text-xs font-semibold hover:bg-teal-800 transition">
+                  Copy Text
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Google Maps Location -->
+  <footer id="contact" class="bg-navy-950 text-slate-300 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-navy-900 border border-slate-700 text-amber-500 flex items-center justify-center">
+              <i class="fa-solid fa-flask-vial text-lg"></i>
+            </div>
+            <div>
+              <span class="block text-lg font-extrabold text-white leading-none">SHYAM TRADERS</span>
+              <span class="block text-xs text-slate-400 mt-1">Chemical Wholesaler • Lucknow</span>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Wholesale supplier of high-purity Ethyl Acetate, N-Butyl Acetate (NBA), NC/PU Industrial Thinners, and bulk industrial solvents with COA, MSDS, and GST billing.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Products &amp; Services</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#catalog" class="hover:text-amber-400 transition">Ethyl Acetate Bulk Supply (CAS 141-78-6)</a></li>
+            <li><a href="#catalog" class="hover:text-amber-400 transition">N-Butyl Acetate / NBA Wholesale (CAS 123-86-4)</a></li>
+            <li><a href="#catalog" class="hover:text-amber-400 transition">Industrial NC, PU &amp; Epoxy Thinners</a></li>
+            <li><a href="#quote-builder" class="hover:text-amber-400 transition">Bulk Drum Quotation &amp; Dispatch</a></li>
+          </ul>
+        </div>
+
+        <!-- Address & Google Maps Link -->
+        <div class="space-y-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white">Warehouse &amp; Contact</h4>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
+              <span>Nadar Ganj, Amausi, Lucknow, Uttar Pradesh 226008</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-amber-500"></i>
+              <a href="tel:+916388881271" class="hover:text-white font-semibold">+91 63888 81271</a>
+            </li>
+          </ul>
+          <div class="pt-1">
+            <a href="https://maps.google.com/maps?cid=14385028087110931725" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-navy-900 hover:bg-slate-800 border border-slate-700 text-white text-xs sm:text-sm font-semibold transition">
+              <i class="fa-solid fa-map-location-dot text-amber-400"></i>
+              <span>Open Shyam Traders on Google Maps</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <p>&copy; <span id="year"></span> Shyam Traders, Nadar Ganj, Amausi, Lucknow. All rights reserved.</p>
+        <p>Industrial Solvents • COA &amp; MSDS Certified • GST Registered</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Helper: Pre-select a chemical from catalog cards and scroll to quote builder
+    function selectProductForQuote(productName) {
+      const checkboxes = document.querySelectorAll('input[name="chemicals"]');
+      checkboxes.forEach(cb => {
+        if (cb.value === productName) {
+          cb.checked = true;
+        }
+      });
+      document.getElementById('quote-builder').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Helper: Gather quote details and format message
+    function buildQuoteMessage() {
+      const checked = Array.from(document.querySelectorAll('input[name="chemicals"]:checked')).map(cb => cb.value);
+      const chemicalsList = checked.length > 0 ? checked.join(', ') : 'Industrial Solvents (General Inquiry)';
+      const packaging = document.getElementById('packaging').value;
+      const quantity = document.getElementById('quantity').value.trim() || 'Not specified';
+      const location = document.getElementById('location').value;
+      const company = document.getElementById('company').value.trim();
+
+      let msg = `Hello Shyam Traders,\nI would like a bulk quotation for:\n`;
+      msg += `• Product(s): ${chemicalsList}\n`;
+      msg += `• Packaging: ${packaging}\n`;
+      msg += `• Quantity: ${quantity}\n`;
+      msg += `• Delivery Location: ${location}`;
+      if (company) {
+        msg += `\n• Company/Buyer: ${company}`;
+      }
+      msg += `\nPlease share today's rate, availability, and COA/GST details.`;
+      return msg;
+    }
+
+    // Open WhatsApp with pre-filled quote
+    function sendWhatsAppQuote() {
+      const message = buildQuoteMessage();
+      showFeedback(message);
+      const encoded = encodeURIComponent(message);
+      window.open(`https://wa.me/916388881271?text=${encoded}`, '_blank', 'noopener,noreferrer');
+    }
+
+    // Display inline feedback summary
+    function showFeedback(message) {
+      const box = document.getElementById('inquiry-feedback');
+      const text = document.getElementById('feedback-text');
+      text.textContent = message;
+      box.classList.remove('hidden');
+    }
+
+    // Handle standard form submit
+    document.getElementById('quote-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const message = buildQuoteMessage();
+      showFeedback(message);
+    });
+
+    // Copy summary text using fallback-safe execCommand
+    function copyQuoteSummary() {
+      const text = document.getElementById('feedback-text').textContent;
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+      } catch (err) {
+        console.error('Copy failed', err);
+      }
+      document.body.removeChild(textarea);
+    }
+  </script>
+</body>
+</html>
